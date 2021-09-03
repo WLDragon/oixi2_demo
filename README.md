@@ -7,7 +7,7 @@
 
 ## 微信小游戏体验地址
 
-  ![image]()
+  ![image](https://github.com/WLDragon/oixi2_demo/blob/main/qrcode.jpg)
 
 
 ## 玩法
