@@ -1,7 +1,7 @@
 {
   "name": "ratinmate",
   "version": "1.0.0",
-  "description": "《Rat In Maze》《迷宫大逃亡》源码",
+  "description": "《小迷宫大逃亡》源码",
   "main": "index.js",
   "scripts": {
     "dev": "vite serve",
@@ -11,21 +11,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "root@git.btkj6.com:WLDragon/taptapcatch"
+    "url": "git@github.com:WLDragon/oixi2_demo.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "WLDragon",
+  "license": "LGPL",
   "dependencies": {
     "oixi2": "^2.0.1",
-    "pako": "^2.0.3",
     "pixi.js": "^6.0.4"
   },
   "devDependencies": {
     "@rollup/plugin-buble": "^0.21.3",
     "@types/fs-extra": "^9.0.12",
     "@types/node": "^16.4.0",
-    "fs-extra": "^10.0.0",
     "vite": "^2.4.3"
   }
 }
