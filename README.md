@@ -1,14 +1,16 @@
+[English](https://github.com/WLDragon/oixi2_demo/blob/main/README_en.md)
+
 # 《小迷宫大逃亡》
 
 这是开源项目`oixi2`的示例工程
 
 展示如何使用`oixi2`和`pixi.js`以及`vite`搭建一个小游戏项目
 
-## 浏览器体验
+## 浏览器版
 
 [点击访问案例](https://wldragon.github.io/rat-in-maze/)
 
-## 微信小游戏体验
+## 微信小游戏版
 
 ![image](https://github.com/WLDragon/oixi2_demo/blob/main/qrcode.jpg)
 
@@ -26,7 +28,7 @@
 
 - `npm serve` 运行生产环境
 
-- `npm image` 将_assist/images里的图片资源写到imageDebug.js，方便调试
+- `npm image` 将_assist/images里的图片资源写到imageDebug.ts，方便调试
 
 ## 生产环境图片集
 
