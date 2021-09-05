@@ -12,15 +12,15 @@ import { MAX_LEVEL_LENGTH } from '../levels/level';
 export default function () {
   return ox(new A, null, () => [
     OSprite('y=' + (HEIGHT - 285), 'bg_level.png'),
-    layout(OSprite('#btnPlay @tap=onPlay', 'play.png')).centerX(3).target,
-    OSprite('#btnBack @tap=onBack y=15', 'btn_back.png'),
-    OSprite('#btnLife @tap=onWatch y=15 x=' + (WIDTH - 130), 'btn_life.png', [
+    layout(OSprite('#btnPlay @pointertap=onPlay', 'play.png')).centerX(3).target,
+    OSprite('#btnBack @pointertap=onBack y=15', 'btn_back.png'),
+    OSprite('#btnLife @pointertap=onWatch y=15 x=' + (WIDTH - 130), 'btn_life.png', [
       OText('#life x=75 y=14', { fill: COLOR_RED, fontSize: 40 })
     ]),
     layout(OContainer([
-      OSprite('#btnLeft @tap=onLeft y=190 x=20', 'level_left.png'),
-      OSprite('#btnRight @tap=onRight y=190 x=' + (WIDTH - 63), 'level_right.png'),
-      OContainer('#items @tap=onSelectLevel x=100', scope(0, 12).map(n => {
+      OSprite('#btnLeft @pointertap=onLeft y=190 x=20', 'level_left.png'),
+      OSprite('#btnRight @pointertap=onRight y=190 x=' + (WIDTH - 63), 'level_right.png'),
+      OContainer('#items @pointertap=onSelectLevel x=100', scope(0, 12).map(n => {
         let x = n % 3 * 130
         let y = floor(n / 3) * 120
         return LevelItem(`x=${x} y=${y}`)

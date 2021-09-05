@@ -15,7 +15,7 @@ export function WorldFail(attributes: string) {
       OText('#title anchor=0.5 x=215 y=45', { fontSize: 48 }),
       OText('#tips anchor=0.5 x=215 y=180', { fill: COLOR_DEEP_ORANGE, fontSize: 24, align: 'center' }),
       layout(OSprite('#iconReplay', 'replay.png'), 430, 515).center().target,
-      OSprite('@tap=onTap x=32 y=395', 'btn_replay.png', [
+      OSprite('@pointertap=onTap x=32 y=395', 'btn_replay.png', [
         OSprite('#iconAd x=20 y=20', 'video.png'),
         OText('#label anchor=0.5 x=215 y=40', { fontSize: 30 })
       ])

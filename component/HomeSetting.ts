@@ -33,16 +33,16 @@ class XLangButton extends Sprite {
 export function HomeSetting(attributes: string) {
 
   return ox(new XHomeSetting, attributes, () => [
-    OGraphics('@tap=onClose').beginFill(0, 0.5).drawRect(0, 0, WIDTH, HEIGHT).endFill(),
+    OGraphics('@pointertap=onClose').beginFill(0, 0.5).drawRect(0, 0, WIDTH, HEIGHT).endFill(),
     OContainer(`#box pivot.x=215 pivot.y=280 x=${WIDTH / 2} y=${HEIGHT / 2}`, [
       OGraphics().beginFill(COLOR_WHITE).drawRoundedRect(0, 0, 430, 470, 10).endFill(),
       OText('#info anchor.x=0.5 x=215 y=40', { fill: 0, fontSize: 30, align: 'center', lineHeight: 50 }),
-      OContainer('x=32 y=240 @tap=onChangeLang', [
+      OContainer('x=32 y=240 @pointertap=onChangeLang', [
         LangButton('#btns', '简体', 'cn'),
         LangButton('#btns x=130', '繁体', 'tw'),
         LangButton('#btns x=260', 'English', 'en')
       ]),
-      OSprite('@tap=onTap x=32 y=350', 'btn_replay.png', [
+      OSprite('@pointertap=onTap x=32 y=350', 'btn_replay.png', [
         OText('#labPolicy anchor=0.5 x=182 y=40', 'Privacy Policy', { fontSize: 30 })
       ])
     ])

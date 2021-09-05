@@ -10,9 +10,9 @@ import storage from '../game/storage';
 export default function () {
   return ox(new A, null, () => [
     OSprite('y=' + (HEIGHT - 662), 'bg_home.png'),
-    layout(OSprite('#btnPlay @tap=onLevelList', 'play.png')).bottom(127).centerX(3).target,
+    layout(OSprite('#btnPlay @pointertap=onLevelList', 'play.png')).bottom(127).centerX(3).target,
     OSprite('#title y=150'),
-    OSprite('#btnSetting x=460 y=15 @tap=onSetting', 'btn_setting.png'),
+    OSprite('#btnSetting x=460 y=15 @pointertap=onSetting', 'btn_setting.png'),
     HomeSetting('#setting visible=0 @lang=onChangeLang')
   ]).created()
 }

@@ -13,11 +13,11 @@ export default function () {
   return ox(new A, null, () => [
     OGraphics().beginFill(0).drawRect(0, 0, WIDTH, HEIGHT).endFill(),
     OContainer('#box', [
-      OGraphics('#background @tap=onTap'),
+      OGraphics('#background @pointertap=onTap'),
       WorldMap('#map @over=onGameOver @win=onWin'),
       WorldFail('#fail visible=0 @replay=onReplay @watch=onWatch'),
-      OSprite('#btnBack @tap=onBack y=15', 'btn_back.png'),
-      OSprite('#btnLife @tap=onOpenWatchAd y=15 x=' + (WIDTH - 130), 'btn_life.png', [
+      OSprite('#btnBack @pointertap=onBack y=15', 'btn_back.png'),
+      OSprite('#btnLife @pointertap=onOpenWatchAd y=15 x=' + (WIDTH - 130), 'btn_life.png', [
         OText('#life x=75 y=14', { fill: COLOR_RED, fontSize: 40 })
       ]),
       OSprite('x=230 y=15 alpha=0.5', 'bg_label.png', [
