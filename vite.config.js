@@ -15,17 +15,18 @@ export default {
       }
     },
     rollupOptions: {
-      external: ['pixi.js'],
+      external: ['pixi.js', 'oixi2'],
       output: {
         dir: 'dist',
         format: 'iife',
         globals: {
-          'pixi.js': 'PIXI'
+          'pixi.js': 'PIXI',
+          'oixi2': 'oixi2'
         }
       },
       plugins: [
         //去掉'=>'等es6代码
-        buble({ exclude: ['*/index.html', '*/pixi.min.js', '*/pako.es5.min.js'] })
+        buble({ exclude: ['*/index.html', '*/pixi.min.js', '*/oixi2.umd.min.js'] })
       ]
     }
   }
